@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div grid grid-cols-3 gap-4>
-      <Link to="/">
+    <div style={{ display: "flex", gap: "20px" }}>
+      <Link style={{ textDecoration: "none", color: "dark-blue" }} to="/">
         <h2>Home</h2>
       </Link>
-      <Link to="/login">
+      <Link style={{ textDecoration: "none", color: "dark-blue" }} to="/login">
         <h2>Login</h2>
       </Link>
-      <Link to="/about">
+      <Link style={{ textDecoration: "none", color: "dark-blue" }} to="/about">
         <h2>About</h2>
       </Link>
     </div>
